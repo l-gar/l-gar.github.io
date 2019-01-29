@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Landing Page</title>
+    <title>Comparison's Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Local style sheet -->
@@ -28,7 +28,7 @@
     }
 </style>
 
-<body>
+<body id="page2">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -50,74 +50,65 @@
                         <li><a href="../HTML_Homework/windspeed.html">Windspeed</a></li>
                     </ul>
                     </li>
-                    <li><a href="../HTML_Homework/comparisons.html">Comparison</a></li>
+                    <li><a class="active" href="../HTML_Homework/comparisons.html">Comparison</a></li>
                     <li><a href="../HTML_Homework/data.html">Data</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!---------------------------------------------------------------------->
-    <div class="parallax">
+    <div class="parallax2">
             <div class="caption">
-                    <span class="border">WeatherPy Analysis</span>
+                    <span class="border">Comparison</span>
             </div>
     </div>
     <div class="container">
     <br><br>
     </div>
     <!---------------------------------------------------------------------->
-        <div class="container-fluid">
+        <div class="container">
             <!---------------------------------------------------------------------->
             <div class="row">
-                <div class="col-md-6">
+                <!---------------------------------------------------------------------->
+                <div class="column">
                         <h1>Latitude vs. X</h1>
                         <hr>
-                    <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png" style="float: left;">
-                    <p>The purpose of this project was to do a weather analysis on cities around the world based on their distance from the equator. As a class we were provided with citipy, which contained code that would help us get a list of cities to use for the analysis. A starter code that would create a framework to build on, and some example images to see what the goal was.</p>
-                    <p>The first thing I did was generate a random list of cities using citipy, whiche yielded around 500+ cities to work with. After the list was created I built a python code that was able to parse through the Json format from the API (OpenWeatherMap API).</p>
-                    <p>The code was designed to make succesive API calls and push all the data into Pandas data frames. Once all the requests were made I cleaned up the data using pandas library and began the analysis.</p>
-                    <p>I looked at four different weather elements (WindSpeed, Cloudiness, Humidity and Temperature), and compared them to the cities latitude in order to see if there was any correlation between eachother.</p>
-                    <p>Finally I used matplotlib to plot the data into useful visualisations to understand the data better.</p>
-                </div>
-                <!---------------------------------------------------------------------->
-                <div class="col-md-5">
-                        <h1>Visualisations</h1>
-                        <hr>
+                        <h4>CLick any plot to get an in-depth analysis.</h4>
                     <div class="row text-center slideanim">
                         <div class="column">
                             <div class="col-sm-6">
-                                <div class="thumbnail">
-                                    <a href="../HTML_Homework/cloudiness.html">
+                                <div class="thumbnail" id="thumbc">
+                                    <a href="../HTML_Homework/index.html">
                                         <img src="image_folder/Weatherpy_LatitudeCloudiness_fig.png" alt="Latitude vs. Cloudiness" width="400" height="300">
-                                        <p><strong>Latitude vs. Cloudiness</strong></p>
+                                        <p><strong>vs. Cloudiness</strong></p>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="thumbnail">
+                                <div class="thumbnail" id="thumbc">
                                     <a href="../HTML_Homework/humidity.html">
                                         <img src="image_folder/Weatherpy_LatitudeHumidity_fig.png" alt="Latitude vs. Humidity" width="400" height="300">
-                                        <p><strong>Latitude vs. Humidity</strong></p>
+                                        <p><strong>vs. Humidity</strong></p>
                                     </a>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                         </div>
                         <div class="row text-center slideanim">
                             <div class="column">
                                 <div class="col-sm-6">
-                                    <div class="thumbnail">
+                                    <div class="thumbnail" id="thumbc">
                                         <a href="../HTML_Homework/temperature.html">
                                             <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png" alt="Latitude vs. Temperature" width="400" height="300">
-                                            <p><strong>Latitude vs. Temperature</strong></p>
+                                            <p><strong>vs. Temperature</strong></p>
                                         </a>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="thumbnail">
+                                    <div class="thumbnail" id="thumbc">
                                         <a href="../HTML_Homework/windspeed.html">
                                             <img src="image_folder/Weatherpy_LatitudeWindspeed_fig.png" alt="Latitude vs. Windspeed" width="400" height="300">
-                                            <p><strong>Latitude vs. Windspeed</strong></p>
+                                            <p><strong>vs. Windspeed</strong></p>
                                         </a>
                                     </div>
                                 </div>
@@ -128,7 +119,7 @@
         </div>
     </div>
     <br>
-    <div class="parallax"></div>
+    <div class="parallax2"></div>
 </body>
 
 </html>

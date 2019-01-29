@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Landing Page</title>
+    <title>Temperature Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Local style sheet -->
@@ -44,7 +44,7 @@
                     <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Visualisations<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="../HTML_Homework/temperature.html">Temperature</a></li>
+                        <li><a class="active" href="../HTML_Homework/temperature.html">Temperature</a></li>
                         <li><a href="../HTML_Homework/cloudiness.html">Cloudiness</a></li>
                         <li><a href="../HTML_Homework/humidity.html">Humidity</a></li>
                         <li><a href="../HTML_Homework/windspeed.html">Windspeed</a></li>
@@ -57,9 +57,9 @@
         </div>
     </nav>
     <!---------------------------------------------------------------------->
-    <div class="parallax">
+    <div class="parallax3">
             <div class="caption">
-                    <span class="border">WeatherPy Analysis</span>
+                    <span class="border">Temperature</span>
             </div>
     </div>
     <div class="container">
@@ -70,14 +70,12 @@
             <!---------------------------------------------------------------------->
             <div class="row">
                 <div class="col-md-6">
-                        <h1>Latitude vs. X</h1>
+                        <h1>Latitude vs. Temperature</h1>
                         <hr>
-                    <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png" style="float: left;">
-                    <p>The purpose of this project was to do a weather analysis on cities around the world based on their distance from the equator. As a class we were provided with citipy, which contained code that would help us get a list of cities to use for the analysis. A starter code that would create a framework to build on, and some example images to see what the goal was.</p>
-                    <p>The first thing I did was generate a random list of cities using citipy, whiche yielded around 500+ cities to work with. After the list was created I built a python code that was able to parse through the Json format from the API (OpenWeatherMap API).</p>
-                    <p>The code was designed to make succesive API calls and push all the data into Pandas data frames. Once all the requests were made I cleaned up the data using pandas library and began the analysis.</p>
-                    <p>I looked at four different weather elements (WindSpeed, Cloudiness, Humidity and Temperature), and compared them to the cities latitude in order to see if there was any correlation between eachother.</p>
-                    <p>Finally I used matplotlib to plot the data into useful visualisations to understand the data better.</p>
+                    <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png">
+                    <hr>
+                    <p>As the figure here displays we see that the closer a city is to the equator (0 Deg. Latitude) the warmer the temperature. However, you can also see that the temperature on the southern hemisphere is generally warmer at this time of the year.</p>
+                    <p>It was very much what anyone would have axpected given the distance between the cities and the sun. The reason why one hemisphere would appear to be warmenr or colder than the other could very well be due to the tilt of the earth.</p>
                 </div>
                 <!---------------------------------------------------------------------->
                 <div class="col-md-5">
@@ -99,7 +97,7 @@
                                         <img src="image_folder/Weatherpy_LatitudeHumidity_fig.png" alt="Latitude vs. Humidity" width="400" height="300">
                                         <p><strong>Latitude vs. Humidity</strong></p>
                                     </a>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                         </div>
@@ -108,10 +106,10 @@
                                 <div class="col-sm-6">
                                     <div class="thumbnail">
                                         <a href="../HTML_Homework/temperature.html">
-                                            <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png" alt="Latitude vs. Temperature" width="400" height="300">
+                                            <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png" alt="Latitude vs. Temperature" width="400" height="300" class="test">
                                             <p><strong>Latitude vs. Temperature</strong></p>
                                         </a>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="thumbnail">
@@ -128,7 +126,7 @@
         </div>
     </div>
     <br>
-    <div class="parallax"></div>
+    <div class="parallax3"></div>
 </body>
 
 </html>
