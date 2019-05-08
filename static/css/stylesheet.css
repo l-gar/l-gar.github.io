@@ -134,5 +134,30 @@
 @media only screen and (max-device-width: 1366px) {
     .parallax {
         background-attachment: scroll;
+        /* background-color: black; */
+        /* background-image: none; */
+    }
+    .parallaxB {
+        background-attachment: scroll;
+    }
+    .parallaxC {
+        background-attachment: scroll;
+        /* background-color: black; */
+        background-image: none;
+    }
+    .parallax-2 {
+        background-attachment: scroll;
+        background-image: none;
+        background-color: #440d0f;
+    }
+    .navbar {
+        border-radius: 20px !important;
     }
 }
+
+@media (max-width: 600px) {
+    .row {   
+        flex-direction: column;
+    }
+    }
+    
