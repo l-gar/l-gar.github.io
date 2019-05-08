@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Local style sheets -->
+    <link rel="stylesheet" type="text/css" href="static/css/stylesheet.css">
+    
+    <!-- external reference sheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><script src='//cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://d3js.org/d3.v2.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
+  </head>
+
+<body>
+<div style="background-color: #440d0f;">
+  <!------------------------------------------------------------------------------------------>
+  <!---------------------------------NAVIGATION BAR------------------------------------------->
+  <!------------------------------------------------------------------------------------------>
+  <nav class="navbar navbar-expand-sm navbar-custom navbar-dark sticky-top rounded-pill" style="background-color: #440d0f;">
+    <a class="navbar-brand text-white display-5"><ion-icon name="analytics"></ion-icon> Luis Garcia &nbsp&nbsp&nbsp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><ion-icon name="home"></ion-icon> Home<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">&nbsp&nbsp <ion-icon name="person"></ion-icon> About Me &nbsp&nbsp<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" target="_blank">&nbsp&nbsp <ion-icon name="briefcase"></ion-icon> Projects &nbsp&nbsp</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        &nbsp&nbsp <ion-icon name="globe"></ion-icon> Social Media
+                </a>
+                <div class="dropdown-menu"  style="background-color: #440d0f;" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-white" target="_blank" href="https://github.com/l-gar"><ion-icon name="logo-github"></ion-icon> GitHub Repo</a>
+                    <a class="dropdown-item text-white" target="_blank" href="https://www.linkedin.com/in/luis-garcia-410965121/"><ion-icon name="logo-linkedin"></ion-icon> Linkedin Profile</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </nav>
+<!------------------------------------------------------------------------------------------>
+<!---------------------------------Introduction--------------------------------------------->
+<!------------------------------------------------------------------------------------------>
+    <div class="parallaxB">
+        <br><br><br><br><br>
+        <div class="container rounded justify-content-center align-items-center text-white" style="background-color: #440d0f;">
+                <div class="row justify-content-center align-items-center">
+                    <h1>About Me</h1>
+                </div>
+        </div>
+        <!-- <br><br><br><br> -->
+        <div class="container-fluid rounded justify-content-center align-items-center">
+            <!-- <br><br> -->
+            <div class="row justify-content-center align-items-center">
+                <div class="col-11 shadow-lg bg-light rounded text-center padding-md" id='textspace'>
+                    <br><br><br>
+                    <img src="images/profile_pic.JPG" class="rounded-circle img-fluid img-thumbnail rotate90" alt="profile pic" style="width:300px;height:250px;">
+                    <br><br><br>
+                    <h5 style="line-height: 300% !important;">Hello, my name is Luis Garcia. 
+                        I am a Data Analyst/Developer based in Austin, TX.
+                        I currently work for a neuroscience research company, developing databases and reports that provide insights for the company.
+                        My background consists of an education in the field of psychology with a strong focus on research methods and more recently a certification in data analysis and visualization.
+                        I have worked in both academic and private settings conducting research, which has allowed me to learn valuable insights into how both these fields operate.
+                    </h5>
+                    <h5 style="line-height: 300% !important;">
+                        My passion has always revolved around creating, building and designing just about anything that I can get my hands on.
+                        Early on, I taugh myself how to draw and paint, which allowed me to chanel all my energy into creating abstract art.
+                        Later in college I channeled that into designing studies, which lead me to my career in research.
+                        At last my passion for creating found the world of coding, and developing systems.
+                    </h5>
+                    <br><br>
+                </div>
+            </div>
+            <br><br>
+  <!------------------------------------------------------------------------------------------>
+  <!---------------------------------Questions------------------------------------------------>
+  <!------------------------------------------------------------------------------------------>
+            <div class="container rounded justify-content-center align-items-center text-white" style="background-color: #440d0f;">
+                <div class="row justify-content-center align-items-center">
+                    <h1>Questions</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-11 shadow-lg bg-light rounded text-center">
+                    <br>
+                    <h4>
+                        Where are you from
+                        <button class="btn btn-sm btn-danger text-white rounded-circle shadow-lg" type="button" data-toggle="collapse" data-target="#origins" aria-expanded="false" aria-controls="collapseExample">
+                            <ion-icon name="help"></ion-icon>
+                        </button>
+                    </h4>
+                    <hr>
+                    <div class="collapse" id="origins">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-8 text-white rounded" style="background-color: #440d0f;">
+                                <h4>Origins</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <h6 style="line-height: 200% !important;">
+                            I am originally from Monterrey, Nuevo Leon in Mexico.
+                            I spent most of my life moving from city to city in Mexico eventually moving to the United States and later becoming a U.S. citizen.
+                            In the United States I have mostly lived in the great state of Texas and most recently decided to settle down for a while here in Austin, TX.
+                        </h6>
+                        <h6 style="line-height: 200% !important;">
+                            All in all, my expereince moving around all my life has taught me to value different cultures and embrace all sorts of people from varying backgrounds.
+                        </h6>
+                        <br>
+                    </div>
+                    <h4>
+                        Where did you go to school
+                        <button class="btn btn-sm btn-danger text-white rounded-circle shadow-lg" type="button" data-toggle="collapse" data-target="#education" aria-expanded="false" aria-controls="collapseExample">
+                            <ion-icon name="help"></ion-icon>
+                        </button>
+                    </h4>
+                    <hr>
+                    <div class="collapse" id="education">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-8 text-white rounded" style="background-color: #440d0f;">
+                                <h4>Education</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <h6 style="line-height: 200% !important;">
+                            I graduated from the Univerity of Texas at Austin with a B.A. in Psychology and a Minor in English.
+                            Through out my college career I focused mainly on the research aspect of psychology.
+                            I was mostly interested in the real world applications of psychology and how to adapt it to my professional and personal life.
+                            Lets go Longhorns!
+                        </h6>
+                        <h6 style="line-height: 200% !important;"> 
+                            A couple of years after graduating I entered a certificate program for data analysis and visualization. 
+                            It was a 6 month intensive program focused on developing and polishing technical programming skills in Excel, Python, Javascript, SQL Databases, Tableau, Big Data and Machine Learning.
+                        </h6>
+                        <br>
+                    </div>
+                    <h4>
+                        How did you get involved to school
+                        <button class="btn btn-sm btn-danger text-white rounded-circle shadow-lg" type="button" data-toggle="collapse" data-target="#education2" aria-expanded="false" aria-controls="collapseExample">
+                            <ion-icon name="help"></ion-icon>
+                        </button>
+                    </h4>
+                    <hr>
+                    <div class="collapse" id="education2">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-8 text-white rounded" style="background-color: #440d0f;">
+                                <h4>Internship</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <h6 style="line-height: 200% !important;">
+                            I began getting involved in school on the first half of my sophmore year. 
+                            I joined the Conceptual Knowledge Lab ran by Dr. Reeves at the University of Texas at Austin.
+                            The lab's main focus was on the effects of language on cognition (figurative language, etc.).
+                        </h6>
+                        <h6 style="line-height: 200% !important;">
+                            By my last year in the intership I was in charge of developing study materials using python, which would later be the center of the testing in the lab.
+                            I also got the oportunity to represent the school by presenting the project's findings in two different conferences.
+                        </h6>
+                        <br>
+                    </div>
+                    <h4>
+                        What are your interests?
+                        <button class="btn btn-sm btn-danger text-white rounded-circle shadow-lg" type="button" data-toggle="collapse" data-target="#interests" aria-expanded="false" aria-controls="collapseExample">
+                            <ion-icon name="help"></ion-icon>
+                        </button>
+                    </h4>
+                    <hr>
+                    <div class="collapse" id="interests">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-8 text-white rounded" style="background-color: #440d0f;">
+                                <h4>Interests</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <h6 style="line-height: 200% !important;">
+                            I enjoy learning new things related to programing, psychology and art. 
+                            For programing my main interest is the development and visualization of databases.
+                            For psychology my main interest is in I/O psychology particularly decision making and imrpoving workplace efficiency.
+                            Lastly I enjoy creating abstract art and learning how other people see the world. 
+                        </h6>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+    <script src="static/js/app.js"></script>
+    </div>
+    </div>
+  <!------------------------------------------------------------------------------------------>
+  <!---------------------------------Footer--------------------------------------------------->
+  <!------------------------------------------------------------------------------------------>
+<footer class="page-footer font-small blue pt-4 bg-dark text-white">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Contact Information</h5>
+            <p>Please use the social media links to contact me.</p>
+            <p>Form coming soon!</p>
+    
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase"><ion-icon name="paper-plane"></ion-icon> Navigation</h5>
+            <ul class="list-unstyled">
+            <li>
+                <a href="/index.html" class="text-white"><ion-icon name="home"></ion-icon> Home</a>
+            </li>
+            <li>
+                <a href="/about.html" class="text-white"><ion-icon name="person"></ion-icon> About Me</a>
+            </li>
+            <li>
+                <a href="#!" class="text-white"><ion-icon name="briefcase"></ion-icon> Projects</a>
+            </li>
+            </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3 text-center">
+            <h5 class="text-uppercase"><ion-icon name="globe"></ion-icon> Social Media</h5>
+            <h2>
+                <a href="https://github.com/l-gar" class="text-white" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </h2>
+            <h2>
+                <a href="https://www.linkedin.com/in/luis-garcia-410965121/" class="text-white" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </h2>
+        </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        Luis Garcia. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

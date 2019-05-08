@@ -3,132 +3,259 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Landing Page</title>
+    <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Local style sheet -->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-    <!-- external reference sheets -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Local style sheets -->
+    <link rel="stylesheet" type="text/css" href="static/css/stylesheet.css">
     
-    <!-- Previous projects external Style sheets for JS code may test later to delete or not-->
-    <!-- It also appears that order of these matter **Maybe**-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- external reference sheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><script src='//cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js'></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</head>
-<style>
-    body {
-        background-color: #e8e8f3;
-        opacity: 80%;
-    }
-</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://d3js.org/d3.v2.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
+  </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="index.html">WeatherPy</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Visualisations<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../l-gar.github.io/temperature.html">Temperature</a></li>
-                        <li><a href="../l-gar.github.io/cloudiness.html">Cloudiness</a></li>
-                        <li><a href="../l-gar.github.io/humidity.html">Humidity</a></li>
-                        <li><a href="../l-gar.github.io/windspeed.html">Windspeed</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="../l-gar.github.io/comparisons.html">Comparison</a></li>
-                    <li><a href="../l-gar.github.io/data.html">Data</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!---------------------------------------------------------------------->
+<div class="parallax-2">
     <div class="parallax">
-            <div class="caption">
-                    <span class="border">WeatherPy Analysis</span>
+        <!-- <div class="caption">
+          <h1 class="text-white display-1"><ion-icon name="briefcase"></ion-icon> My Portafolio</strong></h1>
+        </div> -->
+    </div>
+    <div class="caption">
+            <div class="container justify-content-center">
+                <h2 class="display-1 rounded-pill shadow-lg text-white" style="background-color: #440d0f; letter-spacing: 5px">
+                    <strong><ion-icon name="analytics"></ion-icon> My Portfolio</strong>
+                </h2>
             </div>
-    </div>
-    <div class="container">
-    <br><br>
-    </div>
-    <!---------------------------------------------------------------------->
-        <div class="container-fluid">
-            <!---------------------------------------------------------------------->
-            <div class="row">
-                <div class="col-md-6">
-                        <h1>Latitude vs. X</h1>
-                        <hr>
-                    <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png" style="float: left;">
-                    <p>The purpose of this project was to do a weather analysis on cities around the world based on their distance from the equator. As a class we were provided with citipy, which contained code that would help us get a list of cities to use for the analysis. A starter code that would create a framework to build on, and some example images to see what the goal was.</p>
-                    <p>The first thing I did was generate a random list of cities using citipy, whiche yielded around 500+ cities to work with. After the list was created I built a python code that was able to parse through the Json format from the API (OpenWeatherMap API).</p>
-                    <p>The code was designed to make succesive API calls and push all the data into Pandas data frames. Once all the requests were made I cleaned up the data using pandas library and began the analysis.</p>
-                    <p>I looked at four different weather elements (WindSpeed, Cloudiness, Humidity and Temperature), and compared them to the cities latitude in order to see if there was any correlation between eachother.</p>
-                    <p>Finally I used matplotlib to plot the data into useful visualisations to understand the data better.</p>
+        </div>
+  <!------------------------------------------------------------------------------------------>
+  <!---------------------------------NAVIGATION BAR------------------------------------------->
+  <!------------------------------------------------------------------------------------------>
+  <nav class="navbar navbar-expand-sm navbar-custom navbar-dark sticky-top rounded-pill" style="background-color: #440d0f;">
+    <a class="navbar-brand text-white display-5"><ion-icon name="analytics"></ion-icon> Luis Garcia &nbsp&nbsp&nbsp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html"><ion-icon name="home"></ion-icon> Home<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">&nbsp&nbsp <ion-icon name="person"></ion-icon> About Me &nbsp&nbsp<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" target="_blank">&nbsp&nbsp <ion-icon name="briefcase"></ion-icon> Projects &nbsp&nbsp</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        &nbsp&nbsp <ion-icon name="globe"></ion-icon> Social Media
+                </a>
+                <div class="dropdown-menu"  style="background-color: #440d0f;" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-white" target="_blank" href="https://github.com/l-gar"><ion-icon name="logo-github"></ion-icon> GitHub Repo</a>
+                    <a class="dropdown-item text-white" target="_blank" href="/fitbit_xboost"><ion-icon name="logo-linkedin"></ion-icon> Linkedin Profile</a>
                 </div>
-                <!---------------------------------------------------------------------->
-                <div class="col-md-5">
-                        <h1>Visualisations</h1>
-                        <hr>
-                    <div class="row text-center slideanim">
-                        <div class="column">
-                            <div class="col-sm-6">
-                                <div class="thumbnail">
-                                    <a href="../l-gar.github.io/cloudiness.html">
-                                        <img src="image_folder/Weatherpy_LatitudeCloudiness_fig.png" alt="Latitude vs. Cloudiness" width="400" height="300">
-                                        <p><strong>Latitude vs. Cloudiness</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="thumbnail">
-                                    <a href="../l-gar.github.io/humidity.html">
-                                        <img src="image_folder/Weatherpy_LatitudeHumidity_fig.png" alt="Latitude vs. Humidity" width="400" height="300">
-                                        <p><strong>Latitude vs. Humidity</strong></p>
-                                    </a>
-                                    </div>
-                            </div>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <div class="parallax">
+        <br><br>
+        <div class="container-fluid rounded justify-content-center">
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-8 text-white rounded text-center justify-content-center" style="background-color: #440d0f;">
+                    <h1>Career Summary</h1>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <div class="col-auto rounded shadow-lg bg-light">
+                    <br>
+                    <h5 style="line-height: 200% !important;">
+                        Data Analyst/Developer with a demonstrated history of working in the market research industry, who is excited to extract useful insights from data. 
+                        Skilled in Python, Pandas, Research Design, and Data Management. 
+                        Developed a few web applications that increased efficiency by providing and visualizing data as well as automating several processes at the same time. 
+                        Educated at The University of Texas at Austin with a Bachelor of Arts (B.A.) focused in Psychology and certification in Data Analysis.
+                    </h5>
+                    <br>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <br>
+                <div class="col-sm"></div>
+                <div class="col-5 rounded shadow-lg bg-light">
+                    <div class="row justify-content-center parallaxC">
+                        <div class="col-8 text-white rounded text-center justify-content-center" style="background-color: #440d0f;">
+                            <h1>Technical Skills</h1>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            <h3>Languages:</h3>
+                            <h5>Python (intermediate), SQL (intermediate),  Javascript (intermediate)</h5>
+                            <h3>Data Manipulation and Visualization:</h3>
+                            <h5>Pandas (advanced), Matplotlib (intermediate),  Tableaut (novice), SQLAlchemy (intermediate), Plotly (novice),  D3.js (novice)</h5>
+                            <h3>Database:</h3>
+                            <h5>mySQL (intermediate), Sqlite (intermediate),  BigQuery (novice)</h5>
+                            <h3>Other:</h3>
+                            <h5>Git, Command Line, Flask</h5>
+                            <br>
                         </div>
-                        <div class="row text-center slideanim">
-                            <div class="column">
-                                <div class="col-sm-6">
-                                    <div class="thumbnail">
-                                        <a href="../l-gar.github.io/temperature.html">
-                                            <img src="image_folder/Weatherpy_LatitudeTemperature_fig.png" alt="Latitude vs. Temperature" width="400" height="300">
-                                            <p><strong>Latitude vs. Temperature</strong></p>
-                                        </a>
-                                        </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="thumbnail">
-                                        <a href="../l-gar.github.io/windspeed.html">
-                                            <img src="image_folder/Weatherpy_LatitudeWindspeed_fig.png" alt="Latitude vs. Windspeed" width="400" height="300">
-                                            <p><strong>Latitude vs. Windspeed</strong></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-5 rounded shadow-lg bg-light">
+                    <div class="row justify-content-center parallaxC">
+                        <div class="col-8 text-white rounded text-center justify-content-center" style="background-color: #440d0f;">
+                            <h1>Education</h1>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            <h3>The Data Analysis and Visualization Boot Camp</h3>
+                            <h5 style="line-height: 200% !important;">A 6 month intensive program focused on developing and polishing technical programming skills in Excel, Python, Javascript, SQL Databases, Tableau, Big Data and Machine Learning</h5>
+                            <h3>The University of Texas at Austin</h3>
+                            <h5 style="line-height: 200% !important;">Bachelors of Arts, Major: Psychology, Minor: English</h5>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+                <br><br>
+            </div>
+            <br>
+        </div>
+        <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card rounded shadow" style="width: 18rem;">
+                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card rounded shadow" style="width: 18rem;">
+                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card rounded shadow" style="width: 18rem;">
+                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <div class="parallax"></div>
-</body>
+    </div>
+    <br><br>
+    <div class="parallax">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card rounded shadow" style="width: 18rem;">
+                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card rounded shadow" style="width: 18rem;">
+                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card rounded shadow" style="width: 18rem;">
+                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
+<script src="static/js/app.js"></script>
+</div>
+  <!------------------------------------------------------------------------------------------>
+  <!---------------------------------Footer--------------------------------------------------->
+  <!------------------------------------------------------------------------------------------>
+<footer class="page-footer font-small blue pt-4 bg-dark text-white">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Contact Information</h5>
+            <p>Please use the social media links to contact me.</p>
+            <p>Form coming soon!</p>
+    
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase"><ion-icon name="paper-plane"></ion-icon> Navigation</h5>
+            <ul class="list-unstyled">
+            <li>
+                <a href="/index.html" class="text-white"><ion-icon name="home"></ion-icon> Home</a>
+            </li>
+            <li>
+                <a href="/about.html" class="text-white"><ion-icon name="person"></ion-icon> About Me</a>
+            </li>
+            <li>
+                <a href="#!" class="text-white"><ion-icon name="briefcase"></ion-icon> Projects</a>
+            </li>
+            </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3 text-center">
+            <h5 class="text-uppercase"><ion-icon name="globe"></ion-icon> Social Media</h5>
+            <h2>
+                <a href="https://github.com/l-gar" class="text-white" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </h2>
+            <h2>
+                <a href="https://www.linkedin.com/in/luis-garcia-410965121/" class="text-white" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </h2>
+        </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        Luis Garcia. All rights reserved.
+    </div>
+</footer>
+</body>
 </html>
