@@ -161,3 +161,8 @@
     }
     }
     
+@media screen and (max-width: 768px) { /* Bootstrap's mobile view breakpoint */
+    .navbar {
+        position: relative !important;
+    }
+    }
