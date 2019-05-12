@@ -22,22 +22,21 @@
 
 <body>
 <div class="parallax-2">
-    <div class="parallax">
-        <!-- <div class="caption">
-          <h1 class="text-white display-1"><ion-icon name="briefcase"></ion-icon> My Portafolio</strong></h1>
-        </div> -->
-    </div>
+    <div class="parallax"></div>
     <div class="caption">
-            <div class="container justify-content-center">
-                <h2 class="display-1 rounded-pill shadow-lg text-white" style="background-color: #440d0f; letter-spacing: 5px">
+        <div class="container justify-content-center rounded-pill" style="background-color: rgba(68, 13, 15, .8); letter-spacing: 5px;">
+            <div class="container" style="opacity: 1 !important;">
+                <h2 class="display-1 shadow-lg text-white" >
                     <strong><ion-icon name="analytics"></ion-icon> My Portfolio</strong>
                 </h2>
             </div>
         </div>
+    </div>
   <!------------------------------------------------------------------------------------------>
   <!---------------------------------NAVIGATION BAR------------------------------------------->
   <!------------------------------------------------------------------------------------------>
-  <nav class="navbar navbar-expand-sm navbar-custom navbar-dark sticky-top rounded-pill" style="background-color: #440d0f;">
+  <div style="background-color: #440d0f;">
+  <nav class="navbar navbar-expand-sm navbar-custom navbar-dark sticky-top rounded-pill" style="background-color:  rgba(68, 13, 15, .9);">
     <a class="navbar-brand text-white display-5"><ion-icon name="analytics"></ion-icon> Luis Garcia &nbsp&nbsp&nbsp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -68,6 +67,35 @@
         </ul>
     </div>
     </nav>
+
+    <div class="container-fluid bg-light">
+        <br>
+        <div class="row bg-light rounded shadow-lg">
+            <br>
+            <div class="col text-center">
+                <h1>Welcome!</h1>
+                <h4 style="line-height: 200% !important;">
+                    Below you will see my Resume, and some of my top picks for projects I have worked on in the past.
+                    If you are interested in learning more abour me please navigate to the about me section. 
+                    For a full list of my projects feel free to check out my GitHub repository or navigate to the Projects tab for better viewing.
+                    If you would like to contact me please use the social media links.
+                    This site and all the art displayed was created by me.
+                </h4>
+                <br>
+                <nav aria-label="quick links">
+                    <ul class="pagination pagination-lg justify-content-center">
+                        <li class="page-item"><a class="page-link bg-dark text-white" href="#skilledu">Skills/ Education</a></li>
+                        <li class="page-item"><a class="page-link bg-dark text-white" href="#porfexp">Professional Experience</a></li>
+                        <li class="page-item"><a class="page-link bg-dark text-white" href="#confs">Conferences</a></li>
+                        <li class="page-item"><a class="page-link bg-dark text-white" href="#topp">Top Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+
 <!------------------------------------------------------------------------------------------>
 <!---------------------------------Career Summary------------------------------------------->
 <!------------------------------------------------------------------------------------------>
@@ -96,11 +124,14 @@
                 </div>
             </div>
             <br><br>
+            
         </div>
   <!------------------------------------------------------------------------------------------>
   <!---------------------------------Skills/ Education---------------------------------------->
   <!------------------------------------------------------------------------------------------>
+        
         <div class="container">
+            <div id="skilledu"></div>
             <div class="row">
                 <div class="col">
                     <div class="col-auto rounded shadow-lg bg-light">
@@ -175,6 +206,7 @@
 <!------------------------------------------------------------------------------------------>
         <div class="container rounded justify-content-center">
             <br>
+            <div id="porfexp"></div>
             <div class="row justify-content-center">
                 <div class="col-8 text-white rounded text-center justify-content-center" style="background-color: #440d0f;">
                     <h1>Professional Experience</h1>
@@ -256,6 +288,7 @@
 <!---------------------------------Conferences/ Info---------------------------------------->
 <!------------------------------------------------------------------------------------------>
         <div class="container">
+            <div id="confs"></div>
             <div class="row">
                 <div class="col">
                     <div class="col-auto rounded shadow-lg bg-light">
@@ -346,6 +379,7 @@
 <!---------------------------------Top Projects--------------------------------------------->
 <!------------------------------------------------------------------------------------------>
         <div class="container">
+            <div id="topp"></div>
             <div class="row">
                 <div class="col-sm">
                     <div class="card rounded shadow" style="width: 18rem;">
@@ -381,9 +415,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    
     <br><br>
-    <div class="parallax-2">
     <div class="container">
         <div class="row">
             <div class="col-sm">
@@ -420,8 +453,8 @@
             </div>
         </div>
     </div>
-    </div>
-
+</div>
+</div>
 <script src="static/js/app.js"></script>
 </div>
   <!------------------------------------------------------------------------------------------>
