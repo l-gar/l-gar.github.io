@@ -379,10 +379,34 @@
             <div id="topp"></div>
             <div class="row justify-content-center">
                 <div class="col-8 text-white rounded text-center justify-content-center" style="background-color: #440d0f;">
-                    <h1>Top Projects</h1>
+                    <h1><ion-icon name="star"></ion-icon> Top Projects</h1>
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm">
+                    <div class="card rounded shadow" style="width: 18rem;">
+                        <img src="images/gameOfFitbit.JPG" alt="card image" class="img-thumbnail card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Game of FitBit</h5>
+                            <p class="card-text">Project goal was to create a full stack application that would intake Fitbit or fitness data and pass it through a machine learning model to make predictions.</p>
+                            <a href="https://github.com/ljjbill/game_of_fitbit" target="_blank" class="btn text-white" style="background-color: #440d0f;">Code Repo</a>
+                            <button class="btn text-white rounded-circle shadow-lg float-right" type="button" data-toggle="collapse" data-target="#euro" aria-expanded="false" aria-controls="collapseExample" style="background-color: #440d0f;">
+                                <ion-icon name="arrow-dropdown"></ion-icon>
+                            </button>
+                            <div class="collapse" id="euro">
+                                <hr>
+                                <ul>
+                                    <li>Built Flask Application</li>
+                                    <li>Built front-end of the application</li>
+                                    <li>Translated Machine Learning Models to Flask endpoints</li>
+                                    <li>Connected input form data to machine learning model</li>
+                                </ul>
+                                <p><strong>Tech Used:</strong> Flask, Python, JavaScript, HTML, Bootstrap, CSS, SkLearn, Pandas, Numpy, Scipy, XGBoost, Pickle, Matplotlib</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
                 <div class="col-sm">
                     <div class="card rounded shadow" style="width: 18rem;">
                         <img src="images/OlympicGames.JPG" alt="card image" class="img-thumbnail card-img-top">
@@ -409,33 +433,23 @@
                 <br>
                 <div class="col-sm">
                     <div class="card rounded shadow" style="width: 18rem;">
-                        <img src="images/euroleague.JPG" alt="card image" class="img-thumbnail card-img-top">
+                        <img src="https://media.graytvinc.com/images/810*455/Classified+report.png" alt="card image" class="img-thumbnail card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Euro League ETL Team Project</h5>
-                            <p class="card-text">Project goal was to create a useful data set to explore the connection between city GDP and soccer team attributes.</p>
-                            <a href="https://github.com/ljjbill/euroleague" target="_blank" class="btn text-white" style="background-color: #440d0f;">Code Repo</a>
-                            <button class="btn text-white rounded-circle shadow-lg float-right" type="button" data-toggle="collapse" data-target="#euro" aria-expanded="false" aria-controls="collapseExample" style="background-color: #440d0f;">
+                            <h5 class="card-title">Purchase Order Request System – <i>work project</i></h5>
+                            <p class="card-text">Project goal was to create an in house purchase order system that would notify, collect data, and generate reports to all stakeholders.</p>
+                            <button type="button" class="btn text-white" style="background-color: #440d0f;">Sorry! Confidential</button>
+                            <button class="btn text-white rounded-circle shadow-lg float-right" type="button" data-toggle="collapse" data-target="#po" aria-expanded="false" aria-controls="collapseExample" style="background-color: #440d0f;">
                                 <ion-icon name="arrow-dropdown"></ion-icon>
                             </button>
-                            <div class="collapse" id="euro">
+                            <div class="collapse" id="po">
                                 <hr>
                                 <ul>
-                                    <li>Extracted data from European League Database, wikipedia tables for Soccer Clubs and Cities, and GDP by City</li>
-                                    <li>Transformed data into meaningful aggregations and statistics and then loaded the data into one data set for further analysis</li>
+                                    <li>Created script that would email google form responses to Lab Director, Vice President, or CEO based on amount and or lab city</li>
+                                    <li>Created response system that would auto update based on which requests had been approved</li>
+                                    <li>Created a weekly, monthly and quarterly report out of data collected that would automatically be emailed to all stakeholders</li>
                                 </ul>
-                                <p><strong>Tech Used:</strong> Python, SQLAlchemy, Pandas, Sqlite Database</p>
+                                <p><strong>Tech Used:</strong> G-suite, Google app scripts, Javascript, SQL, FormRanger, HTML</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="col-sm">
-                    <div class="card rounded shadow" style="width: 18rem;">
-                        <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -447,40 +461,76 @@
         <div class="row">
             <div class="col-sm">
                 <div class="card rounded shadow" style="width: 18rem;">
-                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <img src="images/euroleague.JPG" alt="card image" class="img-thumbnail card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Euro League ETL Team Project</h5>
+                        <p class="card-text">Project goal was to create a useful data set to explore the connection between city GDP and soccer team attributes.</p>
+                        <a href="https://github.com/ljjbill/euroleague" target="_blank" class="btn text-white" style="background-color: #440d0f;">Code Repo</a>
+                        <button class="btn text-white rounded-circle shadow-lg float-right" type="button" data-toggle="collapse" data-target="#euro" aria-expanded="false" aria-controls="collapseExample" style="background-color: #440d0f;">
+                            <ion-icon name="arrow-dropdown"></ion-icon>
+                        </button>
+                        <div class="collapse" id="euro">
+                            <hr>
+                            <ul>
+                                <li>Extracted data from European League Database, wikipedia tables for Soccer Clubs and Cities, and GDP by City</li>
+                                <li>Transformed data into meaningful aggregations and statistics and then loaded the data into one data set for further analysis</li>
+                            </ul>
+                            <p><strong>Tech Used:</strong> Python, SQLAlchemy, Pandas, Sqlite Database</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
             <div class="col-sm">
                 <div class="card rounded shadow" style="width: 18rem;">
-                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <img src="images/biodiversity.JPG" alt="card image" class="img-thumbnail card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Biodiversity Dashboard</h5>
+                        <p class="card-text">Project goal was to create an interactive dashboard that could visualize independent samples inside a database.</p>
+                        <a href="https://biodiversity-dashboard-lg.herokuapp.com/" target="_blank" class="btn text-white" style="background-color: #440d0f;">Website</a>
+                        <button class="btn text-white rounded-circle shadow-lg float-right" type="button" data-toggle="collapse" data-target="#biod" aria-expanded="false" aria-controls="collapseExample" style="background-color: #440d0f;">
+                            <ion-icon name="arrow-dropdown"></ion-icon>
+                        </button>
+                        <div class="collapse" id="biod">
+                            <hr>
+                            <ul>
+                                <li>Used flask to develop endpoints that delivered data in json format</li>
+                                <li>Created visualizations that updated based on sample selected</li>
+                                <li>Deployed application to Heroku</li>
+                            </ul>
+                            <p><strong>Tech Used:</strong> Flask, Python, SQLAlchemy, Plotly.js, Javascript, Heroku</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
             <div class="col-sm">
                 <div class="card rounded shadow" style="width: 18rem;">
-                    <img src="https://cdn-images-1.medium.com/max/1600/1*6W5eurFhYPpwNbRbqNImgQ.jpeg" alt="card image" class="img-thumbnail card-img-top">
+                    <img src="https://media.graytvinc.com/images/810*455/Classified+report.png" alt="card image" class="img-thumbnail card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Data Quality – <i>work project</i></h5>
+                        <p class="card-text">Project goal was to create a full stack web application that tapped into a database and displayed reports, visualizations, and statistics.</p>
+                        <button type="button" class="btn text-white" style="background-color: #440d0f;">Sorry! Confidential</button>
+                        <button class="btn text-white rounded-circle shadow-lg float-right" type="button" data-toggle="collapse" data-target="#dqk" aria-expanded="false" aria-controls="collapseExample" style="background-color: #440d0f;">
+                            <ion-icon name="arrow-dropdown"></ion-icon>
+                        </button>
+                        <div class="collapse" id="dqk">
+                            <hr>
+                            <ul>
+                                <li>Created Full stack application in python to visualize data on top of existing company data systems</li>
+                                <li>Built ETLs using SQLAlchemy and Pandas</li>
+                            </ul>
+                            <p><strong>Tech Used:</strong> Flask, Python, SQLAlchemy, Pandas, Vue.js</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br>
         </div>
     </div>
 </div>
 </div>
+<br><br>
 <script src="static/js/app.js"></script>
 </div>
   <!------------------------------------------------------------------------------------------>
