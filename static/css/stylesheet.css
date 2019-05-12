@@ -6,7 +6,6 @@ html {
     background-color: grey;
 }
 
-
 .rotate90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -160,10 +159,16 @@ html {
     .row {   
         flex-direction: column;
     }
-    }
+}
     
 @media screen and (max-width: 768px) { /* Bootstrap's mobile view breakpoint */
     .navbar {
         position: relative !important;
     }
+}
+
+@media(max-width: 480px) {
+    .caption h2 {
+      font-size: 50pt;
     }
+}
